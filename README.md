@@ -1,4 +1,5 @@
-# Group 7 
+# Grupo 7 
+<img width="1146" alt="Screenshot 2024-01-10 at 01 49 48" src="https://github.com/monteirocamis/group7-gama/assets/26682838/defd7435-fcf4-4e9b-9c04-7f3ca0d97073">
 
 ## Getting started
 First install the dependencies:
