@@ -12,7 +12,7 @@ body {
 }
 
 .loader{
-  background: black;
+  background: #002060;
   color: white;
   position: absolute;
   width: 100%;
@@ -33,7 +33,7 @@ body {
   background-color: white;
   transition: all 1s ease;
 }
-
+/* 
 .nav--bar{
   position: absolute;
   display: flex;
@@ -45,8 +45,20 @@ body {
 
 .logo{
   margin-left: 40px;
+} */
+
+.first h1{
+  font-size: 4rem;
+  /* line-height: 8rem; */
+  /* letter-spacing: -0.3rem; */
+  width: 50%;
+  margin-top: 5rem ;
 }
 
+.second{
+  justify-content: flex-end;
+  position: relative;
+}
 .section{
   display: flex;
   width: 100vw;
@@ -59,47 +71,11 @@ body {
   margin-left: 15%;
 }
 
-.first h1{
-  font-size: 10rem;
-  line-height: 8rem;
-  letter-spacing: -0.3rem;
-  width: 50%;
-  margin: 0 0 30px -10px;
+.section--one--container p {
+  margin-top: -4rem;
 }
 
-.button--hero{
-  background: #F2CE6E;
-  color: black;
-  border: none;
-  font-weight: 600;
-  border-radius: 50px;
-  padding: 15px 30px;
-  margin-top: 24px;
-  margin-right: 40px;
-  font-size: 0.6rem;
-  cursor: pointer;
-  transition: all 0.8s ease;
-}
-
-.button--customize{
-  background: #F2CE6E;
-  color: black;
-  border: none;
-  font-weight: 600;
-  border-radius: 50px;
-  padding: 15px 30px;
-  margin-top: 24px;
-  margin-right: 40px;
-  font-size: 0.6rem;
-  cursor: pointer;
-  transition: all 0.8s ease;
-}
-.button--hero:hover{
-  background: black;
-  color: white;
-}
-
-.button--navbar{
+/* .button--navbar{
   background: black;
   color: white;
   border: none;
@@ -107,12 +83,8 @@ body {
   padding: 10px 30px;
   margin-right: 40px;
   font-size: 0.6rem;
-}
+} */
 
-.second{
-  justify-content: flex-end;
-  position: relative;
-}
 
 .section--two--container{
   width: 360px;
@@ -135,7 +107,7 @@ h2{
 .custom--bg{
   width: 100%;
   height: 800px;
-  background: #F2CE6E;
+  background: #002060;
   -webkit-transform: skew(20deg);
   -moz-transform: skew(20deg);
   -o-transform: skew(20deg);
@@ -164,8 +136,89 @@ footer{
 }
 
 .button--footer:hover{
-  background: black;
+  background: #002060;
   color: white;
+}
+
+
+
+.button--exit{
+  width: 90px;
+  margin-bottom: 5%;
+  z-index: 5;
+  position: fixed;
+  bottom: 0;
+  display: none;
+}
+
+.button--colors{
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border: 1px solid white;
+  padding: 0;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+
+.button--colors:hover{
+  filter: drop-shadow(0 0 0.75rem rgba(28, 17, 52, 0.704));
+  transform: scale(1.5);
+}
+
+.button--hero{
+  background: #002060;
+  color: white;
+  border: none;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 15px 30px;
+  margin: 1rem 1rem 14rem 0;
+  /* margin-right: 40px; */
+  font-size: 0.6rem;
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+.button--customize{
+  background: #002060;
+  color: white;
+  border: none;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 15px 30px;
+  margin-top: 24px;
+  margin-right: 40px;
+  font-size: 0.6rem;
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+.button--hero:hover{
+  background: #002060;
+  color: white;
+}
+.customizer--container{
+  position: fixed;
+  top: 50%;
+  display: none;
+  transform: translateY(-50%);
+}
+
+.strap--colors{
+  list-style: none;
+}
+
+
+.yellow{
+  background-color: #F0D56C;
+}
+
+.red{
+  background-color: rgb(231, 34, 34);
+}
+
+.black{
+  background-color: rgb(74, 76, 79);
 }
 
 #webgi-canvas {
@@ -186,55 +239,8 @@ footer{
   align-items: center;
 }
 
-.button--exit{
-  width: 90px;
-  margin-bottom: 5%;
-  z-index: 5;
-  position: fixed;
-  bottom: 0;
-  display: none;
-}
 
-.customizer--container{
-  position: fixed;
-  top: 50%;
-  display: none;
-  transform: translateY(-50%);
-}
-
-.strap--colors{
-  list-style: none;
-}
-
-.button--colors{
-  width: 30px;
-  height: 30px;
-  border-radius: 50px;
-  border: 1px solid white;
-  padding: 0;
-  margin-bottom: 10px;
-  cursor: pointer;
-  transition: all 0.8s ease;
-}
-
-.button--colors:hover{
-  filter: drop-shadow(0 0 0.75rem rgba(28, 17, 52, 0.704));
-  transform: scale(1.5);
-}
-
-.yellow{
-  background-color: #F0D56C;
-}
-
-.red{
-  background-color: rgb(231, 34, 34);
-}
-
-.black{
-  background-color: rgb(74, 76, 79);
-}
-
-/* MOBILE ADJUSTMENTS */
+/********* MOBILE ADJUSTMENTS ***********/
 
 @media (max-width: 600px) {
 
@@ -244,19 +250,23 @@ footer{
   }
 
   .first h1{
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 3rem;
+    /* line-height: 4rem; */
     letter-spacing: -0.1rem;
     width: 50%;
     margin: 0 0 15px 0px;
   }
-
+/* 
   .nav--bar{
     margin-top: 0;
     z-index: 1;
     background: #ffffffad;
     padding: 30px 0;
     backdrop-filter: blur(5px);
+  } */
+  
+  .second{
+    align-items: flex-end;
   }
   
   .section--one--container {
@@ -267,10 +277,7 @@ footer{
 
   .section--one--container > p {
     width: 70%;
-  }
-
-  .second{
-    align-items: flex-end;
+    margin-top: 1rem;
   }
   
   .section--third--container {
