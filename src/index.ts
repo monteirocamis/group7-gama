@@ -177,7 +177,7 @@ async function setupViewer(){
 		window.scrollTo({ top: element?.getBoundingClientRect().top, left: 0, behavior: 'smooth' })
 	})
 
-	// SCROLL TO TOP BUTTON
+	// voltar ao topo BUTTON
 	document.querySelectorAll('.button--footer')?.forEach(item => {
 		item.addEventListener('click', () => {
 			window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
