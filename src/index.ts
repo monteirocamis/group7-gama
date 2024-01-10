@@ -16,6 +16,7 @@ import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import Lenis from '@studio-freight/lenis'
 
+
 const lenis = new Lenis({
   duration: 1.2,
   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
@@ -170,13 +171,13 @@ async function setupViewer(){
         }
     })
 
-    // KNOW MORE EVENT
-	document.querySelector('.button--hero')?.addEventListener('click', () => {
+    // Veja os detalhes Button Event
+	document.querySelector('.button--hero-action')?.addEventListener('click', () => {
 		const element = document.querySelector('.second')
 		window.scrollTo({ top: element?.getBoundingClientRect().top, left: 0, behavior: 'smooth' })
 	})
 
-	// SCROLL TO TOP
+	// SCROLL TO TOP BUTTON
 	document.querySelectorAll('.button--footer')?.forEach(item => {
 		item.addEventListener('click', () => {
 			window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
