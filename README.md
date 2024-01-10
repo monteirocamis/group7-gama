@@ -1,7 +1,16 @@
 # Grupo 7 
 <img width="1146" alt="Screenshot 2024-01-10 at 01 49 48" src="https://github.com/monteirocamis/group7-gama/assets/26682838/defd7435-fcf4-4e9b-9c04-7f3ca0d97073">
 
-## Getting started
+##  Tecnologias utilizadas
+Deploy automático, da branch main, na Vercel.com 
+WebGL
+Modelagem 3D
+Vite
+HTML5 
+CSS3 - Canvas
+Parcel
+
+## Local development
 First install the dependencies:
 ```bash
 npm install
@@ -28,6 +37,11 @@ For the latest version and documentation: [WebGi Docs](https://webgi.xyz/docs/).
 
 ## License 
 For license and terms of use, see the [SDK License](https://webgi.xyz/docs/license).
-This is from a template used in course "building scrolable pages with ScrollTrigger and Threejs" for a vanilla (no ui-framework) project with webgi engine in typescript using parcel bundler.
+This is from a template used in course "building scrolable pages with ScrollTrigger and Threejs" for a vanilla (no ui-framework) project with webgi engine in typescript using parcel bundler. 
 
-[Click here](https://www.youtube.com/watch?v=mpTZbJPYZas) or on the image to visit the Free course on Youtube.
+## Proudly made with Udemy courses for Scrollabe pages and 3D  web.
+[Three Scrollable page ](https://www.udemy.com/course/threejs-scrollable-pages-with-gsap) 
+
+[ 3D Web AR ](https://www.udemy.com/course/model-viewer) 
+
+
