@@ -94,8 +94,18 @@ body {
 }
 
 .section--third--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 15%;
+  z-index: 1;
+}
+.section--third--container p {
+  margin-left: 2rem;
+}
+.section--conclusion {
   width: 40rem;
-  margin-left: 10%;
+  margin-left: 15%;
   z-index: 1;
 }
 .mb-10 {
@@ -234,13 +244,13 @@ footer {
   border: none;
   font-weight: 600;
   border-radius: 50px;
-  padding: 0.5rem 1rem;
-  margin: 1rem 1rem 14rem 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
   /* margin-right: 40px; */
   font-size: 0.6rem;
   cursor: pointer;
   transition: all 0.8s ease;
-  width: 100%;
+  width: 8rem;
 }
 .blue-button:hover {
   background: #000000;
@@ -344,7 +354,7 @@ footer {
 
   .section--third--container {
     width: 220px;
-    margin-left: 10%;
+    margin-left: 15%;
   }
 }
 
@@ -384,7 +394,7 @@ footer {
 }
 
 .infocardContainer div {
-  text-color: white;
+  color: white;
   flex-shrink: 1;
   width: 100%;
   --background-color: green;
@@ -452,9 +462,6 @@ footer {
   --margin: 0 1px 0 1px;
   border-radius: 25px;
 }
-/*TODO: animate copy main transition style for info*/
-.infocardContainer #textbois #hotlinks *:hover {
-}
 
 /* The modal-Excel (background) */
 .modal {
@@ -477,7 +484,7 @@ footer {
   margin: auto;
   padding: 20px;
   border-radius: 10px;
-  width: 50%;
+  width: 80%;
   justify-content: space-evenly;
   display: flex;
 }
@@ -495,4 +502,8 @@ footer {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+.d-center {
+  display: flex;
+  justify-content: center;
 }
