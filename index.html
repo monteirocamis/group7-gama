@@ -225,10 +225,10 @@
 			</div>
 
 			
-			<section class="grid grid-template-columns-4">
+			<!-- <section class="grid grid-template-columns-4">
 			<div class="item">
 
-				<button id="show-image-button" class="blue-button">Power BI</button>
+				<button id="show-image-button-excel" class="blue-button">Excel </button>
 				
 				
 			</div>
@@ -240,11 +240,11 @@
 
 					<div class="item">
 					<a
-					href=""
+					href="https://app.powerbi.com/links/jxQcDS8Fz-?ctid=64f77dc5-3c66-462b-a765-7e07b045624a&pbi_source=linkShare"
 					class=""
 					target="_blank"
 				>
-				<button class="blue-button">Excel</button>
+				<button class="blue-button">Power Bi</button>
 				</a> 
 				</div>
 
@@ -268,7 +268,36 @@
 				</a> 
 				</div>
 				
-			</section>
+			</section> -->
+
+
+
+
+			<!--  MODAL Excel -->
+<button id="myBtn"  class="blue-button">Excel</button>
+<div id="myModal-Excel" class="modal">
+  <div class="modal-content">
+	  <img src="./assets/images/excel.jpeg"  width="500px">
+	<span class="close">&times;</span>
+ </div>
+</div>
+	
+
+			<!--  MODAL Trello -->
+<button id="myBtn-Trello"  class="blue-button">Trello</button>
+<div id="myModal-Trello" class="modal">
+	<div class="modal-content">
+		<img src="./assets/images/trello.png"  width="500px">
+	<span class="close">&times;</span>
+	</div>
+</div>
+
+<!--   Landing -->
+<a  href="https://github.com/monteirocamis/group7-gama" target="_blank">
+	<button   class="blue-button">Landing</button>
+</a>
+
+			
 		</div>
   
       </section>
@@ -279,7 +308,7 @@
         <div class="section--two--container">
           <h2>Banco de dados</h2>
           <p>Criação de tabelas em banco de dados SQL, com dados randomicos gerados em Python.</p>
-		  <a href="" class="">
+		  <a href="https://github.com/nayara1996/Projeto-ManutencaodeEstoque/pull/2" class="">
 			  <button class="white-button"> Github</button> 
 			</a>
 		
@@ -292,9 +321,41 @@
         <div class="section--third--container">
           <h2>Conclusões</h2>
         
-		<h3> 
-			NARRATIVA EQUIPAMENTOS
-		</h3>	
+	
+
+		<p class="">
+
+			
+	•	Adoção da produção make to order para redução da quantidade de itens disponíveis no indicador de custo de capital de produtos acabados, e consequentemente redução do custo;
+	•	Adotar métodos de reprocessamento ou sucateamento dos componentes que estão depreciados e obsoletos, identificados no indicador de custo de capital de matéria-prima.
+	•	Realização de campanhas educacionais para redução de custos de energia elétrica internamente, e em paralelo pesquisar fontes renováveis de geração de energia como energia solar ou biomassa e mais baratas;
+	•	Treinamentos de boas práticas de uso e conservação de equipamentos;
+	•	Realizar investimentos para compra de equipamentos mais modernos que gerem menos manutenções;
+	•	Minimizar as transferências entre os armazéns e um planejamento de produção mais assertiva frente as quantidades necessárias de produtos e matérias primas a serem movimentados diariamente.
+	•	Homologação de novos fornecedores para conseguir valores mais atrativos tanto para as compras quanto para os serviços tomados;
+	</p>
+
+		<h3>
+			Benefícios da Ferramenta:
+		</h3>
+
+		<p>
+			•	Business Inteligence conectado com o banco de dados dos sistemas ERP/ MRP da Empresa. 
+	•	Disponibilização dos dados em tempo real ou periódico
+	•	Documentação com clareza, segurança e Compliance para os dados, de forma 
+	•	Auxílio no acompanhamento e controle dos custos de manutenção de estoque
+		</p>
+
+		<h3>
+			Próximas ações:
+		</h3>
+
+		<p>
+			•	Aprimoramento de uma inteligência artificial que faça uma análise mais profunda dos dados e traga soluções logísticas para melhoria dos resultados.
+			•	Disponibilização na intranet da empresa, para acesso por login e senha aos usuários autorizados
+			•	Embed dos relatórios em Power Bi na landing page
+			•	Banco de dados dinâmico para acesso remoto por pessoas autorizadas
+		</p>
 
 
 		</div>
@@ -324,9 +385,54 @@
     <script src="src/index.ts"></script>
 	<!-- <script src="./modal.js"></script> -->
 
-<script>
 
-const showImageButton = document.getElementById("show-image-button");
+
+
+	<!--  MODAL SCRIPT  -->
+	<script>
+
+		let modal = document.getElementById("myModal-Excel");
+		let btn = document.getElementById("myBtn");
+		let btnTrello = document.getElementById("myBtn-Trello");
+		let span = document.getElementsByClassName("close")[0];
+		
+
+		btn.onclick = function() {
+		  modal.style.display = "block";
+
+	    modal = document.getElementById("myModal-Excel");
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+			modal.style.display = "none";
+		  }
+		}
+		}
+
+		btnTrello.onclick = function() {
+		  modal.style.display = "block";
+
+	    modal = document.getElementById("myModal-Trello");
+	}
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+		modal.style.display = "none";
+	  }
+	}
+
+	
+		</script>
+
+
+
+<!-- <script>
+
+const showImageButton = document.getElementById("show-image-button-excel");
       const myImage = document.getElementById("my-image");
       showImageButton.addEventListener("click", () => {
          myImage.hidden = !myImage.hidden;
@@ -343,6 +449,6 @@ const showImageButton = document.getElementById("show-image-button");
 		//    }
   
 
-	</script> 
+	</script>  -->
   </body>
 </html>

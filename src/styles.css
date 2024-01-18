@@ -167,6 +167,10 @@ footer {
 .grid {
   display: grid;
 }
+.grid-template-columns-1 {
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+}
 .grid-template-columns-3 {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -452,13 +456,30 @@ footer {
 .infocardContainer #textbois #hotlinks *:hover {
 }
 
-/* Modal Content */
+/* The modal-Excel (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* modal-Excel Content */
 .modal-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+  border-radius: 10px;
+  width: 50%;
+  justify-content: space-evenly;
+  display: flex;
 }
 
 /* The Close Button */
@@ -474,26 +495,4 @@ footer {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-}
-
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-
-  overflow: auto; /* Enable scroll if needed */
-}
-.buttontest {
-  padding: 7px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button.blue {
-  background-color: #3498db;
-}
-.name {
-  display: none;
-  color: black;
 }
