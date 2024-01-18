@@ -451,3 +451,49 @@ footer {
 /*TODO: animate copy main transition style for info*/
 .infocardContainer #textbois #hotlinks *:hover {
 }
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+
+  overflow: auto; /* Enable scroll if needed */
+}
+.buttontest {
+  padding: 7px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.blue {
+  background-color: #3498db;
+}
+.name {
+  display: none;
+  color: black;
+}
